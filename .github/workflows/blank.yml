@@ -31,6 +31,9 @@ jobs:
       - name: npm install
         run: npm install
 
+      - name: go to doc
+        run: cd doc
+
       - name: Build the site
         run: npm run build
 
