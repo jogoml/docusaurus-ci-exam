@@ -28,6 +28,9 @@ jobs:
         with:
           node-version: '16'
     
+      - name: install
+        run: npm install ./ed/
+
       - name: Build the site
-        run: npm --prefix doc/ run build
+        run: npm --prefix ./doc/ run build
 
