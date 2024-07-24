@@ -27,13 +27,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-          
-      - name: go to doc
-        run: cd doc
-      
-      - name: npm install
-        run: npm install
-
+    
       - name: Build the site
-        run: npm run build
+        run: |
+          cd doc/
+          npm run build
 
