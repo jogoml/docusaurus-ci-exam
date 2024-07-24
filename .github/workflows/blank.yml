@@ -13,14 +13,10 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  steps:
+    - name: Use Node.js 
+      uses: actions/setup-node@v2
+      with:
         node-version: 18
-
-    steps:
-      - name: Use Node.js 
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - run: npm install
+    - run: npm install
 
