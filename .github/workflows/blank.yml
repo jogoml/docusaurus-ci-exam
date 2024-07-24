@@ -26,6 +26,4 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: |
-          cd ../
-          npm install
+        run: npm install
