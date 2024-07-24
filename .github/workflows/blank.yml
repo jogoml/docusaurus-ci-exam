@@ -29,7 +29,5 @@ jobs:
           node-version: '16'
     
       - name: Build the site
-        run: |
-          cd doc/
-          npm run build
+        run: npm run build
 
